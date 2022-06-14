@@ -13,14 +13,15 @@ class televisao:
         self.canal +=1
     def diminuiCanal(self):
         self.canal -=1
-            
-televisao = televisao()
-print('Televisão esta ligada? {}'.format(televisao.ligada))
-televisao.power()
-print('Televisão esta ligada? {}'.format(televisao.ligada))
-televisao.power()
-print('Televisão esta ligada? {}'.format(televisao.ligada))
-televisao.aumentaCanal()
-televisao.aumentaCanal()
-print('Canal {}'.format(televisao.canal))
+        
+if __name__ == '__main__': # Este if certifica que o código funcionara apenas nesse módulo(arquivo py), e não em outro caso seja importado
+    televisao = televisao()
+    print('Televisão esta ligada? {}'.format(televisao.ligada))
+    televisao.power()
+    print('Televisão esta ligada? {}'.format(televisao.ligada))
+    televisao.power()
+    print('Televisão esta ligada? {}'.format(televisao.ligada))
+    televisao.aumentaCanal()
+    televisao.aumentaCanal()
+    print('Canal {}'.format(televisao.canal))
 
